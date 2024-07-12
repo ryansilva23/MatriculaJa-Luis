@@ -4,12 +4,10 @@
   "description": "O projeto consiste numa aplicação Web feita para agilizar do processo de matrícula em instituições de ensino, indo desde o Fundamental até o ensino médio.",
   "main": "server.js",
   "scripts": {
-    "Start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "db:reload": "npm run db:drop && npm run db:load",
-    "db:load": "node load.js",
-    "db:drop": "rm db.sqlite"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
+  "type":"module",
   "keywords": [],
   "author": "",
   "license": "ISC",

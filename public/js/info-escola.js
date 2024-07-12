@@ -7,12 +7,9 @@ const mapalink = document.getElementById("mapalink")
 const foto_escola = document.getElementById("foto_escola")
 let x = sessionStorage.getItem("escola")
 console.log(investments)
-console.log(sessionStorage.getItem("escola"))
-console.log(investments[x])
 
 let n = parseInt(x)
-
-  const view = `
+const view = `
     <button class="nav-link" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#produto" escola_num="${x}"
                   type="button" role="tab" aria-controls="nav-strategy-tab" aria-selected="false">
                   <h3 class='' style="font-size: 2em;">INFORMAÇÕES</h3>

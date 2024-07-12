@@ -2,15 +2,16 @@
 const response = await fetch('../js/escolas.json');
 
 const investments = await response.json();
+console.log(investments)
 
 const cards = document.querySelector('.cards');
 
 let x = -1
 
-function redirecionar(school){
-  sessionStorage.setItem("escola", school);
-  location.assign("../html/info-escola.html")
-}
+//function redirecionar(school){
+//  sessionStorage.setItem("escola", school);
+//  location.assign("../html/info-escola.html")
+//}
 
 for (const investment of investments) {
   x++
@@ -21,7 +22,7 @@ for (const investment of investments) {
       id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#produto${x} type="button" role="tab" aria-controls="nav-strategy-tab" aria-selected="false"
     >
     
-        <h3 class='' style="font-size: 2em;">${investment.nome}</h3>
+        <a href="http://localhost:3000/escola/${investment.id}"><h3 class='' style="font-size: 2em;">${investment.nome}</h3></a>
         <div style="line-height: 1.6">
         <span style="font-size: 0.9em;">${investment.endereço}</span>
         <span style="font-size: 0.9em;">${investment.telefone}</span>
