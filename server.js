@@ -14,7 +14,7 @@ app.get("/home", (req, res) => {
   res.sendFile('index.html', {root:'public/html'})
 })
 
-app.get("/escola/:id", (req, res) => {
+app.get("/escola", (req, res) => {
   const id = req.params.id
   res.sendFile('info-escola.html', {root:'public/html'})
 })

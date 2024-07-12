@@ -1,12 +1,9 @@
-// import { investments } from './investments.js';
-const response = await fetch('../js/escolas.json');
-
-const investments = await response.json();
+import { investments } from './escolas.js';
 console.log(investments)
 
 const cards = document.querySelector('.cards');
 
-let x = -1
+let x = 0
 
 //function redirecionar(school){
 //  sessionStorage.setItem("escola", school);
@@ -14,7 +11,6 @@ let x = -1
 //}
 
 for (const investment of investments) {
-  x++
   const view = `
   <div class="col">
     <button id="${x}"
@@ -22,9 +18,9 @@ for (const investment of investments) {
       id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#produto${x} type="button" role="tab" aria-controls="nav-strategy-tab" aria-selected="false"
     >
     
-        <a href="http://localhost:3000/escola/${investment.id}"><h3 class='' style="font-size: 2em;">${investment.nome}</h3></a>
+        <a href="http://localhost:3000/escola/?id=${investment.id}"><h3 class='' style="font-size: 2em;">${investment.nome}</h3></a>
         <div style="line-height: 1.6">
-        <span style="font-size: 0.9em;">${investment.endereço}</span>
+        <span style="font-size: 0.9em;">${investment.endereco}</span>
         <span style="font-size: 0.9em;">${investment.telefone}</span>
         <span style="font-size: 0.9em;">${investment.anos}</span>
         <span style="font-size: 0.9em;">${investment.horários}</span>
@@ -33,7 +29,8 @@ for (const investment of investments) {
     <div>`;
   cards.insertAdjacentHTML('beforeend', view);
   let botao = document.getElementById(x);
-  botao.addEventListener('click', function(){
+  x++
+ /* botao.addEventListener('click', function(){
     redirecionar(botao.id);
-  })
+  })*/
 }

@@ -1,8 +1,8 @@
-[
+export const investments =[
   {
-    "id":"1",
+    "id":"0",
     "nome": "EMEIEF LEÔNIDAS SANTIAGO",
-    "endereço": "Endereço: R. Cônego Vicente Pimentel, 350 - Varjão, João Pessoa - PB, 58070-030",
+    "endereco": "Endereço: R. Cônego Vicente Pimentel, 350 - Varjão, João Pessoa - PB, 58070-030",
     "telefone": "Tel: (83)4002-8922",
     "anos": "Anos: Ensino Fundamental do 1° ao 9° ano.",
     "horários": "Horários: 1° ao 5° ano: 13:00 até 17:30; 6° ao 9° ano: 07:00 até 12:00.",
@@ -10,9 +10,9 @@
     "foto": "EMEIEF LEÔNIDAS SANTIAGO.png"
   },
   {
-    "id":"2",
+    "id":"1",
     "nome": "EMEIEF AMERICO FALCÃO",
-    "endereço": "Endereço: R. Dom Bosco, 557 - Cristo Redentor, João Pessoa - PB, 58070-470",
+    "endereco": "Endereço: R. Dom Bosco, 557 - Cristo Redentor, João Pessoa - PB, 58070-470",
     "telefone": "Tel: (83)3218-9375",
     "anos": "Anos: Ensino Fundamental do 1° ao 9° ano.",
     "horários": "Horários: 1° ao 5° ano: 07:00 até 12:00; 6° ao 9° ano: 13:00 até 17:30.",
@@ -20,9 +20,9 @@
     "foto": "EMEIEF AMERICO FALCÃO.png"
   },
   {
-    "id":"3",
+    "id":"2",
     "nome": "EMEF PADRE PEDRO SERRÃO",
-    "endereço": "Endereço: R. Dom Bosco, 755 - Cristo Redentor, João Pessoa - PB, 58070-470",
+    "endereco": "Endereço: R. Dom Bosco, 755 - Cristo Redentor, João Pessoa - PB, 58070-470",
     "telefone": "Tel: (83)3218-6726",
     "anos": "Anos: Ensino Fundamental do 1° ao 9° ano.",
     "horários": "Horários: 1° ao 5° ano: 07:00 até 12:00; 6° ao 9° ano: 13:00 até 17:30.",
@@ -30,9 +30,9 @@
     "foto": "EMEF PADRE PEDRO SERRÃO.png"
   },
   {
-    "id":"4",
+    "id":"3",
     "nome": "EEEF PROF ORLANDO CAVALCANTI GOMES",
-    "endereço": "Endereço: R. Pres. Nereu Ramos, S/N - Cristo Redentor, João Pessoa - PB, 58070-440",
+    "endereco": "Endereço: R. Pres. Nereu Ramos, S/N - Cristo Redentor, João Pessoa - PB, 58070-440",
     "telefone": "Tel: (83)3218-9375",
     "anos": "Anos: Ensino Médio do 1° ao 3° ano.",
     "horários": "Horários: 1° ao 3° ano: 07:00 até 12:00, 13:00 até 17:30.",
@@ -40,9 +40,9 @@
     "foto": "EEEF PROF ORLANDO CAVALCANTI GOMES.png"
   },
   {
-    "id":"5",
+    "id":"4",
     "nome": "EMEF FENELON CAMARA",
-    "endereço": "Endereço: R. Adauto Tolêdo, 157 - Ernesto Geisel, João Pessoa - PB, 58075-260",
+    "endereco": "Endereço: R. Adauto Tolêdo, 157 - Ernesto Geisel, João Pessoa - PB, 58075-260",
     "telefone": "Tel: (83) 3231-5435",
     "anos": "Anos: Ensino Fundamental do 6° ao 9° ano.",
     "horários": "Horários: 6° ao 9° ano: 07:00 até 12:00, 13:00 até 17:30.",
@@ -50,9 +50,9 @@
     "foto": "EMEF FENELON CAMARA.png"
   },
   {
-    "id":"6",
+    "id":"5",
     "nome": "IFPB - CAMPUS JOÃO PESSOA",
-    "endereço": "Endereço: Av. Primeiro de Maio, 720 - Jaguaribe, João Pessoa - PB, 58015-435",
+    "endereco": "Endereço: Av. Primeiro de Maio, 720 - Jaguaribe, João Pessoa - PB, 58015-435",
     "telefone": "Tel: (83) 3612-1200",
     "anos": "Anos: Ensino Médio do 1° ao 4° ano.",
     "horários": "Horários: 1° ao 4° ano: 07:00 até 12:20, 13:00 até 18:00.",
