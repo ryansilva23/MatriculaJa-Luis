@@ -42,6 +42,8 @@ app.get("/*", (req, res, next) => {
     console.log("Página não encontrada 404")
     res.sendFile('404.html', {root:'public/html'})
 })
+// teste de teste
+
 
 /*const userRouter = require("./routes/users")*/
 
