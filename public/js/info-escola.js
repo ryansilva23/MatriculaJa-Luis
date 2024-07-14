@@ -1,10 +1,18 @@
-import { investments } from './escolas.js';
+import { investments } from './escolas.js'; //
+
+//const response = await fetch('http://localhost:3000/dados'); //
+
+//const investments = await response.json(); //
+
 const cards = document.querySelector('.cards');
 const mapalink = document.getElementById("mapalink")
 const foto_escola = document.getElementById("foto_escola")
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const urlParams = new URLSearchParams(window.location.search);
   const escolaId = urlParams.get('id')
+  
 console.log(escolaId)
 console.log(investments)
 const view = `

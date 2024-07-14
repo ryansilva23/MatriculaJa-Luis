@@ -1,4 +1,9 @@
-import { investments } from './escolas.js';
+//import { investments } from './escolas.js'; //
+
+const response = await fetch('http://localhost:3000/dados'); //
+
+const investments = await response.json();//
+
 console.log(investments)
 
 const cards = document.querySelector('.cards');
