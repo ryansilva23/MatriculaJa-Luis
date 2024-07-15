@@ -18,12 +18,13 @@ let x = 0
 for (const investment of investments) {
   const view = `
   <div class="col">
+  <a href="http://localhost:3000/escola/?id=${investment.id}">
     <button id="${x}"
       class="nav-link" 
       id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#produto${x} type="button" role="tab" aria-controls="nav-strategy-tab" aria-selected="false"
     >
     
-        <a href="http://localhost:3000/escola/?id=${investment.id}"><h3 class='' style="font-size: 2em;">${investment.nome}</h3></a>
+        <h3 class='' style="font-size: 2em;">${investment.nome}</h3>
         <div style="line-height: 1.6">
         <span style="font-size: 0.9em;">${investment.endereco}</span>
         <span style="font-size: 0.9em;">${investment.telefone}</span>
@@ -31,6 +32,7 @@ for (const investment of investments) {
         <span style="font-size: 0.9em;">${investment.horários}</span>
         </div>
       </button>
+      </a>
     <div>`;
   cards.insertAdjacentHTML('beforeend', view);
   let botao = document.getElementById(x);
