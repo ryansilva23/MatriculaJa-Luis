@@ -1,5 +1,7 @@
-const express = require("express")
-const morgan = require("morgan")
+import express from 'express'
+import logger from '../utils/logger.js'
+import { users } from '../data/users.js'
+
 const router = express.Router()
 
 router.use(logger)
@@ -35,18 +37,13 @@ router
   })
   .delete((req, res) => {
     res.send(`Delete User With ID ${req.params.id}`)
-  })
+})
 
-const users = [{ name: "Kyle" }, { name: "Sally" }]
+
 router.param("id", (req, res, next, id) => {
   req.user = users[id]
   next()
 })
-
-function logger(req, res, next) {
-  console.log(`${req.originalUrl} opan`)
-  next()
-}
 
 
 module.exports = router
